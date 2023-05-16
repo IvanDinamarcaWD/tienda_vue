@@ -10,7 +10,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import './assets/main.css'
 
+import axios from 'axios'
 
+axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
 const app = createApp(App)
 
